@@ -3,7 +3,7 @@ import { DerivativeService } from '../derivative.service';
 import { SupportedFunctions } from '../derivative.service';
 
 export interface DerivativeResult {
-  value: number; // Значення похідної
+  value: number; 
 }
 
 @Component({
@@ -25,11 +25,8 @@ export class InputComponent implements OnInit {
   }
 
   calculateDerivative() {
-    // Виконати обчислення похідної
     this.derivativeResult = this.derivativeCalculation();
-    // Створити об'єкт DerivativeResult з результатом
     const result: DerivativeResult = { value: this.derivativeResult };
-    // Емітувати подію з результатом обчислення
     this.onCalculate.emit(result);
   }
 

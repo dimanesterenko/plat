@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Імпортуємо FormsModule
+import { FormsModule } from '@angular/forms'; 
 import { InputComponent } from './input.component';
 
 @NgModule({
@@ -9,7 +9,7 @@ import { InputComponent } from './input.component';
   ],
   imports: [
     CommonModule,
-    FormsModule // Додаємо FormsModule
+    FormsModule 
   ],
   exports: [
     InputComponent
