@@ -1,0 +1,15 @@
+<form (ngSubmit)="calculateDerivative()">
+  <div>
+    <label for="functionString">Enter function:</label>
+    <input type="text" id="functionString" name="functionString" #inputfunctionString required>
+  </div>
+  <div>
+    <label for="xValue">Enter x value:</label>
+    <input type="text" id="xValue" name="xValue" #inputxValue required>
+  </div>
+  <div>
+    <label for="hValue">Enter h value:</label>
+    <input type="text" id="hValue" name="hValue" #inputhValue required>
+  </div>
+  <button type="submit">Calculate</button>
+</form>
