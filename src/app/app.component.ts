@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { DerivativeService } from './derivative.service';
-
+import { DerivativeResult } from './input/input.component';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +11,9 @@ import { DerivativeService } from './derivative.service';
 })
 export class AppComponent {
   constructor(private derivativeService: DerivativeService) {}
+  derivativeResult: number | null = null;
+
+  receiveDerivative(result: DerivativeResult) {
+    this.derivativeResult = result.value;
+  }
 }

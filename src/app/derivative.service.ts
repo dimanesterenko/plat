@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface SupportedFunctions {
+export interface SupportedFunctions {
   'x^2': (x: number) => number;
   'x^3': (x: number) => number;
   'sin(x)': (x: number) => number;
